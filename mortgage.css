@@ -1,0 +1,257 @@
+
+*{
+        font-family: "Plus Jakarta Sans";
+}
+.wrapper1{
+    display: flex;
+    justify-content: center; 
+    background-color:rgb(255, 255, 255);
+}
+.wrapper2{
+    display: flex;
+    justify-content: center;
+    background-color:rgb(255, 255, 255);
+}
+.mainwrapper{
+    width:100%;
+    height: 100%;
+
+}
+h2{
+    margin: 3px;
+    font-weight: 700;
+    color:hsl(202, 55%, 16%)
+}
+
+.input-div{
+    position: relative;
+    width:93%;
+    height:35px;
+    border-radius: 4px;
+    margin-top: 7px;
+    margin-bottom: 12px;
+    border:2px solid hsl(200, 24%, 40%);
+}
+#clear{
+    padding-bottom: 100px;
+}
+
+.upper-container{
+    background-color: hsl(0, 0%, 100%);
+    width:326px;
+    padding-left:20px ;
+    outline:solid 2px;
+}
+#sbs-main{
+    background-color: hsl(0, 0%, 100%);
+    justify-content: space-between;
+    margin-bottom: 10px;
+
+}
+.radiowrapper{
+    position: relative;
+    width:93%;
+    border-radius: 5px;
+    margin-top: 8px;
+    margin-bottom: 4px;
+    border: 2px solid gray;
+    height:40px;
+}
+.lower-container{
+    background-color:hsl(202, 55%, 16%);
+    width: 320px;
+    padding:15px;
+
+}
+#sbs{
+    display: flex;
+    background-color: white;
+
+}
+#calculate{
+    position: relative;
+    background-color: hsl(61, 76%, 45%);
+    width:93%;
+    display: block;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    height:45px;
+    border-radius: 30px;
+    font-weight: 700;
+    font-size:16px;
+}
+#calc-image{
+    position: absolute;
+    left:25px;
+    top: 20px;
+    transform: translateY(-50%);
+}
+body{
+    font-size: 16px;
+    font-weight: 500;
+}
+#amount{
+    position: absolute;
+    left:45px;
+    width:245px;
+    height:34px;
+    border:none;
+    outline: none;
+}
+
+#term{
+    position: absolute;
+    width:225px;
+    height:30px;
+    border: none;
+    outline: none;
+
+}
+#interest{
+    position: absolute;
+    width:245px;
+    height:32px;
+    border:none;
+    outline:none;
+
+}
+#yearspan{
+    position: absolute;
+    right:0px;
+    height:32px;
+    width:65px;
+    text-align: center;
+    padding-top: 3px;
+    background-color:  hsl(202, 86%, 94%);
+}
+#pound{
+    height:32px;
+    width:53px;
+    position: absolute;
+    text-align: center;
+    background-color:hsl(202, 86%, 94%);
+    padding-top: 3px;
+}
+#perc{
+    position: absolute;
+    right:0px;
+    height:32px;
+    width:53px;
+    text-align: center;
+    background-color:  hsl(202, 86%, 94%);
+    padding-top: 3px;
+
+}
+.radioclass{
+    left:8px;
+    position: absolute;
+    top:14px;
+    transform: translateY(-50%);
+}
+.spanradio{
+    left:40px;
+    position: absolute;
+    top:17px;
+    transform: translateY(-50%);
+}
+.image{
+    display: flex;
+    justify-content: center;
+}
+h3{
+    text-align: center;
+    color:hsl(202, 86%, 94%);
+}
+.lower-container p{
+    color:hsl(202, 86%, 94%);
+}
+.result{
+    display:flex;
+    justify-content: center;
+    width: 320px;
+    height: 422px;
+    display: none;
+
+}
+.result .container{
+    font-family:"Plus Jakarta Sans";
+    width:320px;
+    background-color:hsl(201, 85%, 21%);
+    padding:15px;
+    color:hsl(202, 86%, 94%);
+}
+.result .container h2{
+    font-size: 40px;
+}
+.result .container #monthly-answer{
+    color: hsl(61, 70%, 52%);
+}
+.result .container #term-answer{
+    font-size:25px;
+    color:white;
+}
+
+
+.answer{
+    background-color: hsl(202, 55%, 16%);
+    border-radius: 5px;
+    padding:8px;
+    color:hsl(203, 41%, 72%);
+    box-shadow: 0px -5px 0px 0px hsl(61, 70%, 52%);
+}
+#reset{
+    text-decoration: underline;
+    background: transparent;
+    border:none;
+}
+@media (min-width:100px){
+    #sbs-main{
+       display:flex;
+        height:60px;
+        width:96%;
+    }
+    #sbs1{
+        width:45%;
+    }
+    #sbs2{
+        width:45%;
+    }
+    body{
+        display: flex;
+        background-color:hsl(202, 86%, 94%);
+        align-content: center;
+    }
+    .input-div{
+        width:90%;
+    }
+    #term{
+        width:93%;
+    }
+    #interest{
+        width:93%;
+    }
+    .upper-container{
+        height: 450px;
+        outline:none;
+    
+    }
+        .lower-container{
+        height: 422px;
+        border-radius: 0px 10px 10px 50px;
+    
+    }
+    .mainwrapper{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .result{
+        height:450px;
+        background-color: white;
+    }
+    .container{
+        border-radius:0px 10px 10px 50px;
+        
+
+    }
+}

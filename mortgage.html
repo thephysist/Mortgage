@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mortgage Calculator</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Estonia&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="mortgage.css">
+</head>
+<body>
+<div class="mainwrapper">
+    <div class="wrapper1" >
+        <div class="upper-container">
+            <form action="">
+            <h2>Mortgage Calculator</h2>
+            <input type="reset" id="reset"value="Clear All"><br><br>
+            <label for="amount" > Mortgage Amount</label><br>
+            <div class="input-div">
+                 <span id="pound">&pound</span>
+                 <input type="number" id="amount" required>
+            </div>
+            <div id="sbs-main">
+                <div id="sbs1">
+                    <label for="term">Mortgage Term</label><br>
+                    <div class="input-div">
+                        <input type="number" id="term" required>
+                        <span id="yearspan">years</span>
+                    </div>
+                </div>
+                <div id="sbs2">
+                    <label for="interest">Interest Rate</label><br>
+                    <div class="input-div">
+                        <input type="number" id="interest" required>
+                        <span id="perc">%</span>
+                    </div>
+                </div>
+            </div>
+            <label for="">Mortgage Type</label><br>
+            <div class="radiowrapper" id="radiowrapper1"><input type="radio" id="radiowrapper1.1" name="option" class="radioclass" value="1" onchange="hey(this)"><span class="spanradio">Repayments</span></div>
+            <div class="radiowrapper" id="radiowrapper2"><input type="radio" name="option" id="radiowrapper1.2"class="radioclass" value="2" onchange="hey(this)"><span class="spanradio">Interest Only</span></div>
+            <button type="button"id="calculate" ><img id="calc-image"src="icon-calculator.svg" alt="">Calculate Repayments</button>
+            </form>
+        </div>
+
+    </div>
+            <div class="wrapper2"id="wrapper22" >
+                <div class="lower-container">
+                    <div class="image"><img src="illustration-empty.svg" alt="illustration-empty"></div>
+                    <h3>Results shown here</h3>
+                    <p id="temp">Complete the form and click "calculate repayments" to see what your monthly repayments would be.</p>
+                </div>
+
+            </div>
+
+            <div class="result" id="results">
+                <div class="container">
+                    <h1>Your results</h1>
+                    <p>Your results are shown below based on the information you provided.
+                        To adjust the results,edit the form and click "calculate repayments" again.
+                    </p>
+                    <div class="answer">
+                        <span>Your monthly repayments</span>
+                        <h2 id="monthly-answer">ANSWER HERE</h2>
+                        <hr>
+                        <span>Total you'll repay over the term</span>
+                        <h2 id="term-answer">ANSWER HERE</h2>
+                    </div>
+                </div>
+            </div>
+ </div>
+   
+
+   <script src="script.js"></script> 
+</body>
+</html>
